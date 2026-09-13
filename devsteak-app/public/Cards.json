@@ -7,7 +7,9 @@
     "description": "A programming language used to make websites interactive and dynamic.",
     "category": "Programming",
     "difficulty": "Beginner",
-    "rating": 4.8
+    "rating": 4.8,
+    "popularity": 95,
+    "views": 12500
   },
   {
     "id": 2,
@@ -17,7 +19,9 @@
     "description": "A JavaScript library for building reusable and interactive user interfaces.",
     "category": "Frontend",
     "difficulty": "Intermediate",
-    "rating": 4.9
+    "rating": 4.9,
+    "popularity": 98,
+    "views": 15800
   },
   {
     "id": 3,
@@ -27,7 +31,9 @@
     "description": "A stylesheet language used to design and style web pages.",
     "category": "Frontend",
     "difficulty": "Beginner",
-    "rating": 4.7
+    "rating": 4.7,
+    "popularity": 90,
+    "views": 11200
   },
   {
     "id": 4,
@@ -37,7 +43,9 @@
     "description": "The standard markup language used to create the structure of web pages.",
     "category": "Frontend",
     "difficulty": "Beginner",
-    "rating": 4.9
+    "rating": 4.9,
+    "popularity": 93,
+    "views": 13900
   },
   {
     "id": 5,
@@ -47,7 +55,9 @@
     "description": "A strongly typed programming language built on top of JavaScript.",
     "category": "Programming",
     "difficulty": "Advanced",
-    "rating": 4.8
+    "rating": 4.8,
+    "popularity": 87,
+    "views": 9800
   },
   {
     "id": 6,
@@ -57,7 +67,9 @@
     "description": "A React framework for building fast and scalable web applications.",
     "category": "Framework",
     "difficulty": "Advanced",
-    "rating": 4.9
+    "rating": 4.9,
+    "popularity": 92,
+    "views": 12100
   },
   {
     "id": 7,
@@ -67,7 +79,9 @@
     "description": "A JavaScript runtime that allows JavaScript to run outside the browser.",
     "category": "Backend",
     "difficulty": "Intermediate",
-    "rating": 4.7
+    "rating": 4.7,
+    "popularity": 89,
+    "views": 10900
   },
   {
     "id": 8,
@@ -77,7 +91,9 @@
     "description": "A NoSQL database designed for storing flexible document-based data.",
     "category": "Database",
     "difficulty": "Intermediate",
-    "rating": 4.6
+    "rating": 4.6,
+    "popularity": 82,
+    "views": 8700
   },
   {
     "id": 9,
@@ -87,7 +103,9 @@
     "description": "A beginner-friendly programming language used in web development, data science, and AI.",
     "category": "Programming",
     "difficulty": "Beginner",
-    "rating": 4.9
+    "rating": 4.9,
+    "popularity": 97,
+    "views": 16700
   },
   {
     "id": 10,
@@ -97,7 +115,9 @@
     "description": "A language used to store, retrieve, and manage data in relational databases.",
     "category": "Database",
     "difficulty": "Intermediate",
-    "rating": 4.7
+    "rating": 4.7,
+    "popularity": 84,
+    "views": 9200
   },
   {
     "id": 11,
@@ -107,7 +127,9 @@
     "description": "A version control system used to track changes and manage source code.",
     "category": "Tools",
     "difficulty": "Beginner",
-    "rating": 4.8
+    "rating": 4.8,
+    "popularity": 91,
+    "views": 11800
   },
   {
     "id": 12,
@@ -117,6 +139,8 @@
     "description": "A lightweight Node.js framework used to build web servers and APIs.",
     "category": "Backend",
     "difficulty": "Intermediate",
-    "rating": 4.6
+    "rating": 4.6,
+    "popularity": 79,
+    "views": 7600
   }
 ]

@@ -7,7 +7,7 @@ export default function Poster(){
              <div>
                 <h1 className="font-bold text-6xl">Build Your Ideal</h1>
                 <h1 className='font-bold text-6xl bg-linear-to-r from-pink-500 via-orange-500 to-blue-950 bg-clip-text text-transparent'>Development Stack</h1>
-                <p>Explore frontend, backend, database, and tooling options,<br />
+                <p className='space-y-3 my-8'>Explore frontend, backend, database, and tooling options,<br />
                       compare them side by side, and put together the stack that fits your <br />
                        next project.</p>
 
