@@ -33,7 +33,7 @@ export default function Cards({dataPromise} : CardsProps){
     
     return (
         
-      <main className="">
+      <main className="container mx-auto px-4 py-8">
         <div className="space-y-3 my-8">
           <h1 className="font-bold text-5xl">Explore the <span className=" bg-linear-to-r from-pink-500 via-orange-500 to-blue-950 bg-clip-text text-transparent">Technologies</span></h1>
           <p className="font-bold text-1xl text-[#64748B]">Pick one technology per category to build your ideal stack.</p>
