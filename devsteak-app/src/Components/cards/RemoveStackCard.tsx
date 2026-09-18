@@ -1,5 +1,6 @@
 import type { ICard } from "../CardType"
 
+
 interface RemoveStackCardProps {
     Info : ICard
     handleRemovedCard : (card : ICard) => void
@@ -17,7 +18,9 @@ export default function RemoveStackCard ({Info, handleRemovedCard}: RemoveStackC
                 <p className = "text-sm text-gray-400 font-medium">{Info.category}</p>
             </div>
          </div>
-         <button className="close-btn" aria-label="Close" onClick={() => handleRemovedCard(Info)}>X</button>
+         <button className="w-6 h-6 flex items-center justify-center" onClick={() => handleRemovedCard(Info)}>
+            <img src="   https://cdn-icons-png.flaticon.com/512/458/458595.png " alt="CrossIcon" />
+         </button>
         </div>
     )
 }

@@ -1,78 +1,34 @@
-# React + TypeScript + Vite
+ GitHub Repository description:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.Name of your project : Developer technology  stack check
 
-Currently, two official plugins are available:
+2.A little description : This is full functional Web application, Its has lot of feature , I am explaining some of them. Its created fully fucused on modern style and its nav to footer all are functional and single page application. Its most important feature is its cards box whics is excellent and theoratic also loogical function added there. Its button made it more responsive and modern. because buttons use like add to card features functionalities and logic throw.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+3.Technology that you use : React.js, Tailwind CSS, DaisyUI, TypeScript / JavaScript (ES6+), React-Toastify (NPM Package), JSON (for technology data) ,Vite (build tool)
 
-## React Compiler
+4 .features about your project : modern navbar, iconic banner section , e-com style card function which cand add or remove both in a single state , modern UI design.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
 
-## Expanding the ESLint configuration
+#Question answer--->
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.What is JSX, and why is it used in React?
+ANSWER : JSX is a syntext that used in react that let us to write HTML like code inside the javascript and it use in react because it easyly maintain UI to how look like.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2.What is the difference between props and state?
+ANSWER : The difference between props and state is both can hold data but props passes data and state manage the data.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3.What does the useState hook do, and where did you use it in this project?
+ANSWER : UseState hook hook manage the side effect of component . I use useState inside the cards componet for togolling and passing data Card componen to RemoveStackCard componet .TO create some functional buttons.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+4.What does the useEffect hook do, and why did you need it to load the JSON data?
+ANSWER : It use for side effect after a component rander. because fetching data is a side effect
 
-```
+5.Why does every item in a .map() list need a unique key prop?
+ANSWER : To understand react which item it is inside the component.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+6.What is conditional rendering? Show one place you used it (example: the empty stack message).
+ANSWER : Conditional randering means shwing different UI elements on conditional randering. I used it inside the "StackCard" elament button function.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+ANSWER : A parent components sends data to child componet using props, and a child send back something using callback function.

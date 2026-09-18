@@ -47,7 +47,7 @@ export default function Card({card , selectedCardInfo, handleAddedCard, handleRe
            onClick={handleAddToSteak} 
               disabled={isAdded}
               >
-            {isAdded ? "Added to Steak" : "Add to Stack"}
+            {isAdded ? "✓ Added to Steak" : "Add to Stack"}
               </button>
         </div>
         </div>
