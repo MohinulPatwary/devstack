@@ -26,10 +26,14 @@ export default function Cards({dataPromise} : CardsProps){
   const handleRemovedCard = (card: ICard) => {
     setSelectedCardInfo((prev) => prev.filter((item) => item.id !== card.id));
   };
+
+    const handleClearAll = () => {
+    setSelectedCardInfo([]); // Empties the cart list entirely
+  };
     
     return (
         
-      <main className="container w-full">
+      <main className="">
         <div className="space-y-3 my-8">
           <h1 className="font-bold text-5xl">Explore the <span className=" bg-linear-to-r from-pink-500 via-orange-500 to-blue-950 bg-clip-text text-transparent">Technologies</span></h1>
           <p className="font-bold text-1xl text-[#64748B]">Pick one technology per category to build your ideal stack.</p>
@@ -43,7 +47,7 @@ export default function Cards({dataPromise} : CardsProps){
         </div>
         <div className="col-span-3">
           <h1>cart</h1>
-          <StackCard selectedCardInfo={selectedCardInfo} handleRemovedCard={handleRemovedCard} ></StackCard>
+          <StackCard selectedCardInfo={selectedCardInfo} handleRemovedCard={handleRemovedCard} handleClearAll={handleClearAll}></StackCard>
         </div>
           </section>
       </main>
