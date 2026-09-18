@@ -12,7 +12,7 @@ export default function Navbar(){
             </ul>
             <div className='flex items-center gap-4'>
                 <button className='px-4 py-2 text-sm font-medium'>Sign In</button>
-                <button className='px-4 py-2 text-sm font-medium text-white bg-[#D91B7E] rounded-full'>Sign Up</button>
+                <button className='px-4 py-2 text-sm font-medium text-white bg-linear-to-r from-pink-500 via-orange-500 to-indigo-600 rounded-full'>Sign Up</button>
             </div>
         </div>
         

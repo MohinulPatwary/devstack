@@ -1,6 +1,8 @@
-import { use } from "react"
+import { use, useState } from "react"
 import type { ICard } from "../CardType";
 import Card from "./Card";
+import StackCard from "./StackCard";
+
 
 
 
@@ -9,9 +11,22 @@ interface CardsProps {
   dataPromise: Promise<ICard[]>;
 }
 
-export default function Cards({dataPromise} : CardsProps){
+export default function Cards({dataPromise} : CardsProps){ 
+
     const cards = use(dataPromise) 
-    console.log(cards)
+    // console.log(cards)
+    const [selectedCardInfo, setSelectedCardInfo] = useState<ICard[]>([])
+
+  
+  const handleAddedCard = (card: ICard) => {
+    setSelectedCardInfo((prev) => [...prev, card]);
+  };
+
+ 
+  const handleRemovedCard = (card: ICard) => {
+    setSelectedCardInfo((prev) => prev.filter((item) => item.id !== card.id));
+  };
+    
     return (
         
       <main className="container w-full">
@@ -23,11 +38,12 @@ export default function Cards({dataPromise} : CardsProps){
             <div className="col-span-7 grid grid-cols-3 gap-4">
           
           {
-             cards.map(card => <Card card = {card}></Card>)
+             cards.map((card, ind: number) => <Card key = {ind} card = {card} handleAddedCard = {handleAddedCard} selectedCardInfo={selectedCardInfo} handleRemovedCard={handleRemovedCard}></Card>)
           }
         </div>
         <div className="col-span-3">
-          <h1 >cart</h1>
+          <h1>cart</h1>
+          <StackCard selectedCardInfo={selectedCardInfo} handleRemovedCard={handleRemovedCard} ></StackCard>
         </div>
           </section>
       </main>
