@@ -3,7 +3,7 @@ export default function Navbar(){
     return (
         <div className='fixed top-0 left-0 right-0 z-50 bg-white border-b border-b-gray-100 shadow-sm'>
            <div className ="container mx-auto flex justify-between items-center h-20.5 px-8">
-             <img src={logoText} alt="" />
+             <img src={logoText} alt="Logo" />
             <ul className='flex justify-evenly gap-8 font-medium'>
                 <li>Home</li>
                 <li>Technologies</li>
