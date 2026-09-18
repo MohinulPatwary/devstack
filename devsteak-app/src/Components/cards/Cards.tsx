@@ -2,6 +2,7 @@ import { use, useState } from "react"
 import type { ICard } from "../CardType";
 import Card from "./Card";
 import StackCard from "./StackCard";
+import { toast } from 'react-toastify';
 
 
 
@@ -20,15 +21,19 @@ export default function Cards({dataPromise} : CardsProps){
   
   const handleAddedCard = (card: ICard) => {
     setSelectedCardInfo((prev) => [...prev, card]);
+    toast.success(`${card.name } added to stack!`);
+    
   };
 
  
   const handleRemovedCard = (card: ICard) => {
     setSelectedCardInfo((prev) => prev.filter((item) => item.id !== card.id));
+     toast.success(`${card.name } removed from stack!`);
   };
 
     const handleClearAll = () => {
     setSelectedCardInfo([]); 
+     toast.success(`All cards cleared from stack!`);
   };
     
     return (
