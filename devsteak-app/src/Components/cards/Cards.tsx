@@ -28,7 +28,7 @@ export default function Cards({dataPromise} : CardsProps){
   };
 
     const handleClearAll = () => {
-    setSelectedCardInfo([]); // Empties the cart list entirely
+    setSelectedCardInfo([]); 
   };
     
     return (
@@ -46,7 +46,6 @@ export default function Cards({dataPromise} : CardsProps){
           }
         </div>
         <div className="col-span-3">
-          <h1>cart</h1>
           <StackCard selectedCardInfo={selectedCardInfo} handleRemovedCard={handleRemovedCard} handleClearAll={handleClearAll}></StackCard>
         </div>
           </section>

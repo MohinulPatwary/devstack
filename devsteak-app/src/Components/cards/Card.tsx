@@ -25,7 +25,7 @@ export default function Card({card , selectedCardInfo, handleAddedCard, handleRe
         <div>
               <div className="card bg-base-100 shadow-md border p-5 rounded-xl">
       <div className="flex justify-between items-center mb-3">
-        <img src={card.name} alt={card.name} className="w-10 h-10 object-contain" />
+        <img src={card.icon} alt={card.name} className="w-10 h-10 object-contain" />
         <span className="badge badge-info badge-outline">{card.badge}</span>
       </div>
       <h2 className="text-xl font-bold">{card.name}</h2>

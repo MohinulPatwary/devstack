@@ -4,6 +4,8 @@ import Poster from "./Components/Poster"
 import Cards from "./Components/cards/Cards";
 import type { ICard } from "./Components/CardType";
 
+
+
 function App() {
   async function dataPromise (): Promise<ICard[]>{
     const res = await fetch('/Cards.json');
