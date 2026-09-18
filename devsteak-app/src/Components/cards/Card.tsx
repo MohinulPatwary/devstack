@@ -23,7 +23,7 @@ export default function Card({card , selectedCardInfo, handleAddedCard, handleRe
 
     return (
         <div>
-              <div className="card bg-base-100 shadow-md border p-5 rounded-xl">
+              <div className={`card bg-base-100 shadow-md border p-5 rounded-xl ${isAdded ? 'border-pink-500' : 'border-gray-200'}`}>
       <div className="flex justify-between items-center mb-3">
         <img src={card.icon} alt={card.name} className="w-10 h-10 object-contain" />
         <span className="badge badge-info badge-outline">{card.badge}</span>
@@ -35,10 +35,21 @@ export default function Card({card , selectedCardInfo, handleAddedCard, handleRe
         <span>{card.difficulty}</span>
         <span className="text-amber-500 font-bold">★ {card.rating}</span>
       </div>
-      <button className="btn btn-neutral w-full mt-2" onClick={handleAddToSteak} disabled={isAdded }>
+      {/* <button className="btn btn-neutral w-full mt-2" onClick={handleAddToSteak} disabled={isAdded }>
         {isAdded ? "Added to steak" :"Add to Stack"}
-      </button>
-    </div>
+      </button> */}
+      <button 
+           className={`btn w-full mt-2 transition-all border rounded-md ${
+             isAdded 
+            ? 'text-pink-700 text-pink bg-fuchsia-50 font-bold' 
+      : 'btn-neutral'
+         }`} 
+           onClick={handleAddToSteak} 
+              disabled={isAdded}
+              >
+            {isAdded ? "Added to Steak" : "Add to Stack"}
+              </button>
+        </div>
         </div>
     )
 }
